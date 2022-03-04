@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+
+    <script type="text/javascript" src="./main_motion.js">
+    
+    </script>
+    <title>Random Walk</title>
+</head>
+<body onload="beginMotion()">
+    <svg id="main_event" style="width: 640px; height: 480px; background-color:cornsilk">
+
+    </svg>
+    <div>
+        <button onclick="paused = !paused">
+            Pause / Resume
+        </button>
+        <button onclick="restartMotion()">
+            Restart
+        </button>
+    </div>
+    <table>
+        <tr>
+            <td>Number of balls:</td>
+            <td><input id="n_dots"/></td>
+        </tr>
+
+        <tr>
+            <td>Radius of balls:</td>
+            <td><input id="r_dots"/></td>
+        </tr>
+    </table>
+
+    <div>
+        Average relaxation time: <span id="rtime"></span> seconds.
+    </div>
+    <div>
+        Simulation duration: <span id="time"></span> seconds.
+    </div>
+</body>
+</html>
