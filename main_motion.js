@@ -99,8 +99,8 @@ const collisionCheck = () => {
                 continue
             if(distance(dots[i], dots[j]) <= dotRadius * 2) {
                 let i2j_vec = {
-                    x: dots[j].y - dots[i].y,
-                    y: dots[j].x - dots[i].x 
+                    x: dots[j].x - dots[i].x,
+                    y: dots[j].y - dots[i].y 
                 }
 
                 let i2j_dir = {
