@@ -5,6 +5,8 @@ This simulator uses HTML 5 and Javascript to work, and an SVG node on the page t
 
 The entire project is a single client-side HTML application, which will display the animation of the Random Walk by generating the animation in real time inside the browser.
 
+You can see this code in action [here](https://theocrat.github.io/RandomWalk). Note that it runs inside your browser, using your machine's resources. It runs well on a PC or laptop, but does have bugs on phones.
+
 ### Approximations made
 
   * All collisions are elastic
