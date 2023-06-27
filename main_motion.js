@@ -197,6 +197,7 @@ const shadeGenerator = (r, g, b) => {
 
 const restartMotion = () => {
     // Create the balls which float around
+    N_dots = parseInt(document.getElementById('n_dots').value)
     dots = fillUpDots(N_dots + 1)
 
     // Reset the path
@@ -208,7 +209,7 @@ const restartMotion = () => {
 
     // Interactively set up the "constants"
     dotRadius = parseInt(document.getElementById('r_dots').value)
-    N_dots = parseInt(document.getElementById('n_dots').value)
+    
 
     // Reset the timer
     time = 0
