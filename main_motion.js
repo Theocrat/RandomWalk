@@ -219,4 +219,9 @@ const restartMotion = () => {
 
     // Beginning the set of events that will make the motion happen
     collisionCheck()
+
+    // Empty the Data structure storing tabulated data
+    dataStructure.time = []
+    dataStructure.displacement = []
+    dataStructure.collisions = []
 }
