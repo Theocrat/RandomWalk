@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="favicon.png">
 
-    <script type="text/javascript" src="./main_motion.js">
+    <script type="text/javascript" src="./main_motion.js"> </script>
+    <script type="text/javascript" src="./note_data.js">   </script>
     
-    </script>
     <title>Random Walk</title>
 </head>
 <body onload="beginMotion()">
@@ -40,6 +40,31 @@
     </div>
     <div>
         Simulation duration: <span id="time"></span> seconds.
+    </div>
+
+    <div>
+        <p>
+            According to Einstein's mathematical model of the Random Walk, the
+            displacement of a pollen grain upon collision with the particles of
+            water varies proportionally with the square root of the number of 
+            collisions.
+        </p>
+        <blockquote>
+            E{s} ∝ √n
+        </blockquote>
+        <p>
+            Where s is the displacement, E is the expectation operator, and the 
+            variable n is the number of collisions. The textarea below generates
+            and stores a JSON containing the number of collisions and the 
+            magnitude of displacement of the red ball (the "pollen grain") from
+            the starting position, noted at regular intervals.
+        </p>
+        <p>
+            Perhaps this will help me to verify or better understand the theory.
+        </p>
+        <textarea id="data">
+
+        </textarea>
     </div>
 </body>
 </html>
